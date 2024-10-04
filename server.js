@@ -27,16 +27,12 @@ app.use(errorMiddleware((err, req, res, next) => {
 
 const PORT=process.env.PORT || 5000;
 
-// const path=require('path');
-// app.get("/",(req,res)=>{
-//     app.use(express.static(path.resolve(__dirname,"client","build")));
-//     app.sendFile(path.resolve(__dirname,"client","build","index.html"));
-// });
-app.use(express.static(path.resolve(__dirname, "client", "build")));
-
-app.get("/", (req, res) => {
-    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+const path=require('path');
+app.get("/",(req,res)=>{
+    app.use(express.static(path.resolve(__dirname,"client","build")));
+    app.sendFile(path.resolve(__dirname,"client","build","index.html"));
 });
+
 
 connectDB().then(()=>{
     app.listen(PORT,()=>{
