@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run dev",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rossshh/TechX.git"
+  },
+  "author": "ROSHAN KUMAR JHA",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rossshh/TechX/issues"
+  },
+  "homepage": "https://github.com/rossshh/TechX#readme",
+  "description": "",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cloudinary": "^1.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.5.3",
+    "nodemon": "^3.1.4",
+    "path": "^0.12.7",
+    "zod": "^3.23.8"
+  }
+}
